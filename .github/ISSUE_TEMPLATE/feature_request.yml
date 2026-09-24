@@ -1,0 +1,24 @@
+name: Feature request
+description: 提议新的学习场景或产品能力
+title: "[Feature]: "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: 学习问题
+      description: 这个功能希望解决什么学习问题？
+    validations:
+      required: true
+  - type: textarea
+    id: flow
+    attributes:
+      label: 理想流程
+      description: 从用户点击开始，到得到结果为止。
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: 其他方案
+      description: 你目前如何解决这个问题？

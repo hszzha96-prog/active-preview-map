@@ -1,0 +1,43 @@
+name: Bug report
+description: 报告可以稳定复现的问题
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: 请勿上传含个人信息或受版权保护的课件原件。
+  - type: textarea
+    id: description
+    attributes:
+      label: 问题描述
+      description: 实际发生了什么？你预期发生什么？
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤
+      placeholder: |
+        1. 打开……
+        2. 上传……
+        3. 点击……
+    validations:
+      required: true
+  - type: dropdown
+    id: file-type
+    attributes:
+      label: 文件类型
+      options:
+        - PDF
+        - PPTX
+        - TXT / Markdown
+        - 未涉及文件
+  - type: input
+    id: browser
+    attributes:
+      label: 浏览器与版本
+  - type: textarea
+    id: extra
+    attributes:
+      label: 其他信息
+      description: 可提供脱敏后的截图或控制台错误。
